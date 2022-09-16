@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #6200ee;
+  color: #cbc7ce;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  font-size: 2rem;
+  color: rgb(68, 5, 214);
+}
+
+.main {
+  width: 60%;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  top: 10rem;
+  padding: 2rem;
+  border-radius: 9px;
+  filter: drop-shadow(0.4rem 0.4rem 0.1rem black);
+}
+.buttons {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0.4rem;
+}
+.show-password {
+  width: 80%;
+  padding: 0.4rem;
+  border: 2px solid purple;
+  background-color: none;
+  border-radius: 7px;
+  color: black;
+}
+.show-password:focus {
+  outline: none;
+}
+.buttons button {
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  background-color: #6200ee;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  filter: drop-shadow(0.2rem 0.2rem 0.1rem black);
+  transition: all 0.4s ease;
+}
+.buttons button:hover {
+  background-color: #0e002f;
+}
+
+button i {
+  padding: 0.2rem;
+}
+@media screen and (min-width: 980px) {
+  .show-password {
+    width: 40%;
+  }
+}
